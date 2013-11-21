@@ -10,15 +10,15 @@ gem 'rails', '4.0.1'
 gem 'therubyracer'
 
 # Use sqlite3 as the database for Active Record
-group :development do
+group :development,:test do
 	gem 'sqlite3','1.3.8'
-	gem 'rspec-rails'
+	gem 'rspec-rails', '2.13.1'
 end
 #-----------------
 #add test
 group :test do
-	gem 'rspec'
-	gem 'webrat'
+	gem 'selenium-webdriver', '2.35.1'
+	gem 'capybara','2.1.0'
 end
 
 # Use SCSS for stylesheets
