@@ -1,4 +1,6 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
+
 # change it 
 #
 ruby '2.0.0'
@@ -7,6 +9,9 @@ gem 'rails', '4.0.1'
 
 #add by tianlu ,and thisis a css framework
 gem 'bootstrap-sass','2.3.2.0'
+
+#add by tianlu ,and this is a hash screat
+#gem 'bcrypt-ruby', '3.0.1'
 
 #add by tianlu
 gem 'therubyracer'
@@ -53,13 +58,13 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+ gem 'bcrypt-ruby', '3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+#gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
