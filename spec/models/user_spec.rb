@@ -9,7 +9,7 @@
 
 require 'spec_helper'
 
-describe User do
+describe "User"  do
 
 	before do
 	 @user = User.new(
@@ -120,6 +120,18 @@ describe User do
     describe "with a password that's too short " do
     	before { @user.password = @user.password_confirmation = "a"* 5}
 		it { should be_invalid}    	
+    end
+
+    #记忆权标的第一个测试
+    it { should respond_to(:password_confirmation) }
+    it { should respond_to(:remember_token) }
+    it { should respond_to(:authenticate) }
+
+    #测试合法的（非空）记忆权标值
+    describe "remember token " do
+    	before { @user.save}
+    	its (:remember_token ) {should_not be_blank}
+    	
     end
 
 
