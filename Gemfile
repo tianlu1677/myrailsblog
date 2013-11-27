@@ -10,13 +10,21 @@ gem 'rails', '4.0.1'
 #add by tianlu ,and thisis a css framework
 gem 'bootstrap-sass','2.3.2.0'
 
+#add by tianlu this is a fenye gem
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate','0.0.9'
+
 #add by tianlu ,and this is a hash screat
 #gem 'bcrypt-ruby', '3.0.1'
 
 #add by tianlu
 gem 'therubyracer'
 
+#add by tianlu create simple user
+gem 'faker', '1.1.2'
+
 # Use sqlite3 as the database for Active Record
+
 group :development,:test do
 	gem 'sqlite3','1.3.8'
 	gem 'rspec-rails', '2.13.1'
