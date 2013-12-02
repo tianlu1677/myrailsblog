@@ -18,6 +18,12 @@ class MicropostsController < ApplicationController
   	redirect_to root_url
   end
 
+  def self.from_users_followed_by(user)
+    followed_user_ids = "select followed_id from relationships where follower_id = :user_id"
+                    where("user_id IN (#{followed_user_ids}) or user_id = :user_id",
+                    user_id: user_id)
+  end
+
   private
 
     def micropost_params
