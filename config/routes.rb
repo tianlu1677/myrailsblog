@@ -1,13 +1,6 @@
 FirstApp::Application.routes.draw do
   
-  # delete it becase we use the resource
-  #get "users/new"
-  # get "static_pages/contact"
-  # get "static_pages/home"
-  # get "static_pages/help"
-  # get "static_pages/about"
-
-  resources :users do
+   resources :users do
     member do
       get :following, :followers
     end
