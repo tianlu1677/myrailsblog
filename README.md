@@ -1,10 +1,23 @@
-my name is Jacky 
 
-this is mu first rails app
+This is a app that like weibo.
+---------
 
-I write it  and there is something about this app
+##Function:
+  * Register
+  * sign in
+  * personal page
+  * follow others and be followed
+  * send, delete, and reply  weibo 
 
-* Ruby 2.0.0
-* rails 4.0.1
-* node.js 
-* good
+
+## How to install it 
+
+You should have ruby2.0 and Ruby on rails 4.0 on your computer. 
+
+You can git clone or download it. 
+
+OK. You can run it at localhost:3000
+
+## More things.
+
+If you use mysql and nginx, please change the YAML file and nginx config file.
